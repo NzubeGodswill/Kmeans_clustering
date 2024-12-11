@@ -35,11 +35,11 @@ y_pred = kmeans.fit_predict(X)
 joblib.dump(kmeans, "model/model.pkl")
 
 # Predictions
-# 0: "Prudent Spender",
-# 1: "Generous Spender",
-# 2: "Extravagant Spender",
-# 3: "Wise Spender",
-# 4: "Loose Spender"
+# 0: "Prudent Spenders",
+# 1: "Generous Spenders",
+# 2: "Extravagant Spenders",
+# 3: "Wise Spenders",
+# 4: "Loose Spenders"
 plt.scatter(X[y_pred == 0, 0], X[y_pred == 0, 1], s=100, c='red', label='Prudent Spenders')
 plt.scatter(X[y_pred == 1, 0], X[y_pred == 1, 1], s=100, c='blue', label='Generous Spenders')
 plt.scatter(X[y_pred == 2, 0], X[y_pred == 2, 1], s=100, c='green', label='Extravagant Spenders')
